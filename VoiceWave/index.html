@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoiceWave - Text to Speech Web App</title>
+    <link rel="icon" href="Imgages/favicon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="Imgages/voicewave.png" alt="VoiceWave Logo">
+            </div>
+            <div class="menu-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+<div id="bg-color" class="container">
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Free Text to Speech (TTS) Online</h1>
+            <textarea id="text-to-speech" placeholder="Enter text here..."></textarea>
+            <select id="voice-selection"></select>
+            <button id="speak-button">Convert to Speech</button>
+            <button id="download-button">Download Speech</button>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <h2>Features</h2>
+        <div class="feature-list">
+            <div class="feature">
+                <img  class="ft1"src="Imgages/double.jpg" alt="Feature 1">
+                <h3>High-Quality Speech</h3>
+                <p>Experience clear and natural sounding speech with our advanced TTS technology.</p>
+            </div>
+            <div class="feature">
+                <img class="ft2" src="Imgages/listen.png" alt="Feature 2">
+                <h3>Customizable Voices</h3>
+                <p>Select from a variety of voices to match your needs. Both male and female voices are available.</p>
+            </div>
+            <!-- Add more features as needed -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About</h2>
+        <div class="about-content">
+            <div class="about-item">
+                <img class="Ab1" src="Imgages/Double-your-comprehension.jpg" alt="About Image">
+                <p>VoiceWave is dedicated to providing the best text to speech solutions. Our mission is to make TTS technology accessible and easy to use for everyone.</p>
+            </div>
+            <div class="about-item">
+                <img  class="Ab2" src="Imgages/featurepic.png" alt="About Image">
+                <p>We continually improve our services to meet the needs of our diverse user base, ensuring high-quality, natural-sounding speech for a wide range of applications.</p>
+            </div>
+        </div>
+    </section>
+</div>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 VoiceWave. All rights reserved.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/recordrtc@5.6.2/RecordRTC.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
